@@ -1,5 +1,8 @@
 const bookTable = document.querySelector(".bookTable");
 const bookList = document.querySelector(".bookList");
+const modal = document.querySelector(".modal");
+const openDialog = document.querySelector(".addBook");
+const closeDialog = document.querySelector(".add");
 
 // All of your book objects are going to be stored in an array,
 
@@ -41,3 +44,12 @@ function getBooks() {
 }
 
 getBooks();
+
+//Dialog
+openDialog.addEventListener("click", () => {
+  modal.showModal();
+});
+
+closeDialog.addEventListener("click", () => {
+  modal.close();
+});

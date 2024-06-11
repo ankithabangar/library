@@ -11,6 +11,7 @@
   <body>
     <div>
       <h1>Your Library</h1>
+      <button class="addBook">NEW BOOK</button>
       <table class="bookTable">
         <thead>
           <tr>
@@ -22,6 +23,25 @@
         </thead>
         <tbody class="bookList"></tbody>
       </table>
+      <dialog class="modal">
+        <p>Add Book to your Library!</p>
+        <form class="form" method="dialog">
+          <label for="title">Book Title</label><br />
+          <input type="text" id="title" name="title" /><br />
+          <label for="author">Author</label><br />
+          <input type="text" id="author" name="author" /><br />
+
+          <label for="pages">Number of Pages</label><br />
+          <input type="number" id="pages" name="pages" /><br />
+
+          <label for="isRead">Did you read the book?</label><br />
+          <input type="radio" id="read" name="isRead" value="read" />
+          <label for="read">Read</label>
+          <input type="radio" id="notRead" name="isRead" value="notRead" />
+          <label for="notRead">Not Read</label><br />
+          <button class="add" type="submit">ADD</button>
+        </form>
+      </dialog>
     </div>
   </body>
 </html>
